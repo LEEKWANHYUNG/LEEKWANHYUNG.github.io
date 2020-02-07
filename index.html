@@ -86,9 +86,6 @@
               <br>
               <br>
 
-
-
-
             </h3>
         </div>
       </div>
@@ -477,19 +474,20 @@
                 <p>
                   if request.method == 'POST':
                   <br>
-                  만약에 POST 방식으로 메소드가 가져와졌을때
-                  <br>
-                  username_1 = request.POST.get('username')
-                  : username 으로 받은 str형을 겟방식으로 받고 포스트로 받은거를 username_1 에 집어 넣은다
+                  username=request.POST.get('username')
 
-                  <br>
-                  password_1 = request.POST.get('password')
-                  : password 으로 받은 str형을 겟방식으로 받고 포스트로 받은거를 password_1 에 집어 넣은다
+                  password=request.POST.get('password’)
+                  <br>                  <br>
 
-                  <br>
-                  user = auth.authenticate(request, username_1=username, password_1=password)
-                  : request받은 username=username_1 // 이며 password_1=password 가 일치하면 유저를 인증하고 인증된유저를 user에 넣은다
-                  <br>
+                  #form 태크의 method 속성이 post면 각 변수에
+                  form 태그의 username과 password로 된 input 태그의 값들을 각 변수마다 넣어준거임
+                  <br>                  <br>
+
+                  user=auth.authenticate <br>(request, username=username, password=password)
+                  <br>                  <br>
+
+                  #그리고 앞서 form tag에서 받은 인풋 정보들을 auth.authenticate라는 인증함수에 인증받는것(로그인)
+                  만약 성공하면 해당 유저를 리턴
                   <h1>이딴거알필요없다 => 개발자가 아니니까 이래서 외주업체를 쓴다는 느낌으로 이야기할거임</h1>
                   <h1>수정할거많음</h1>
 
