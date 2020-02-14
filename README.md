@@ -1,68 +1,79 @@
-# [Start Bootstrap - Agency](https://startbootstrap.com/template-overviews/agency/)
+# 보라돌이 기업+직무 발표
+주니어코렙 8조 보라돌이 최종 발표
+구성원 : 이관형 최선호 이채민 이현우 김준경 백기욱 홍다빈
 
-[Agency](https://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
 
-## Preview
+## Index
 
-[![Agency Preview](https://startbootstrap.com/assets/img/screenshots/themes/agency.png)](https://blackrockdigital.github.io/startbootstrap-agency/)
+1. **발표 흐름**
+2. **피드백 반영**
+3. **예시 **
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-agency/)**
 
-## Status
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-agency/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-agency.svg)](https://www.npmjs.com/package/startbootstrap-agency)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-agency.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-agency)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-agency/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-agency?type=dev)
+## 발표 구성
 
-## Download and Installation
+- **발표 흐름**
+  - 
+- **초반부**
+  - 창업 강세
+    - 창업 및 스타트업이 유행하고 격려하는중 예시 : 국민대학교 창업지원학교 2위 선정
+    - 창업을 많이 독려하고 창업이 그만큼 잘나감
+    - 성공사례 : 토스 , 배달의 민족 -> 웹,앱 기반 서비스
+    - 예시 : 나도 창업에 관심이 생겨서 붕어빵을 웹,앱 서비스 기반으로 판매할려고한다.
+    - 
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/agency/)
-* Install via npm: `npm i startbootstrap-agency`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-agency.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-agency)
 
-## Usage
+## App 구조
 
-### Basic Usage
+- Goorm Project
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+- main
+- goorm
+- accounts
 
-### Advanced Usage
 
-After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
 
-#### Gulp Tasks
+## 사이트맵 구조
 
-- `gulp` the default task that builds everything
-- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
 
-You must have npm installed globally in order to use this build environment.
 
-## Bugs and Issues
+## DB 구성도
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-agency/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/agency/).
+- **Brand**
+  - brdName
+- **Tobacco**
+  - tobacco_brand(브랜드관계)
+  - 제품명
+  - 가격
+  - 출시일
+  - 니코틴 함량
+  - 타르 함량
+  - 타격감
+  - 맨솔 유무
+  - 별점(점수)
+  - 좋아요 수
+  - like_user
+- **User**
+  - username
+  - password
+  - email
+  - myGoorm?
+- **Review**
+  - writer(유저관계)
+  - pub_date
+  - contents
 
-## About
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+## 배포
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+- ngrok?
+- pythonanywhere
+- heroku
+- AWS.....
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## Copyright and License
+## 개인임무분담
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-agency/blob/gh-pages/LICENSE) license.
